@@ -24,5 +24,7 @@ FROM nginx:alpine
 COPY --from=builder /app/.next /usr/share/nginx/html
 
 EXPOSE 3000
+#EXPOSE 80 default
 USER node
 CMD [ "npm", "start" ]
+#CMD se puede borrar, nginx se inicia automaticamente

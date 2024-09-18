@@ -1,58 +1,58 @@
-  version: '3.8'
+version: '3.8'
 
-  networks:
-    app_network:
+networks:
+  app_network:
 
-  services:
-    mssql:
-      image: mcr.microsoft.com/mssql/server:2022-latest
-      container_name: sqlserver
-      environment:
-        - ACCEPT_EULA=Y
-        - SA_PASSWORD=gigachad*69
-      ports:
-        - "1433:1433"
-      volumes:
-        - sql_data:/var/opt/mssql
-      networks:
-        - app_network
+services:
+  willinn-unknown-api:
+    build:
+      context: .
+      dockerfile: Api/Dockerfile-test
+    container_name: willinn-unknown-api
+    environment:
+      "ASPNETCORE_URLS": "http://+:5001"
+    ports:
+      - "5001:5001"
+    depends_on:
+      - mssql
+    networks:
+      - app_network
 
-    willinn-unknown-api:
-      build:
-        context: .
-        dockerfile: Api/Dockerfile-test
-      container_name: willinn-unknown-api
-      environment:
-        "ASPNETCORE_URLS": "http://+:5001"
-      ports:
-        - "5001:5001"
-      depends_on:
-        - mssql
-      networks:
-        - app_network
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=gigachad*69
+    ports:
+      - "1433:1433"
+    volumes:
+      - sql_data:/var/opt/mssql
+    networks:
+      - app_network
 
-    frontend:
-      build:
-        context: ./Frontend/wally-app/
-        dockerfile: Dockerfile
-      container_name: nextjs_frontend
-      ports:
-        - "3000:3000"
-      depends_on:
-        - willinn-unknown-api
-      networks:
-        - app_network
+  frontend:
+    build:
+      context: ./Frontend/wally-app/
+      dockerfile: Dockerfile
+    container_name: nextjs_frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - willinn-unknown-api
+    networks:
+      - app_network
 
-      #develop:
-        #watch:
-          #- action: sync
-            #path: ./web
-            #target: /src/web
-            #ignore:
-              #- node_modules/
-          #- action: rebuild
-            #path: package.json
+    #develop:
+      #watch:
+        #- action: sync
+          #path: ./web
+          #target: /src/web
+          #ignore:
+            #- node_modules/
+        #- action: rebuild
+          #path: package.json
 
-  volumes:
-    sql_data:
+volumes:
+  sql_data:
 
