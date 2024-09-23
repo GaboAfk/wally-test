@@ -943,19 +943,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/macbook/.nuget/packages/": {}
+    "C:\\Users\\Gabriel\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/macbook/Documents/Zonamerica/Backend/willinn-backend-template/UnitTests/UnitTests.csproj",
+      "projectUniqueName": "\\\\wsl.localhost\\Ubuntu\\home\\gabo\\willinn-unknown-api\\UnitTests\\UnitTests.csproj",
       "projectName": "UnitTests",
-      "projectPath": "/Users/macbook/Documents/Zonamerica/Backend/willinn-backend-template/UnitTests/UnitTests.csproj",
-      "packagesPath": "/Users/macbook/.nuget/packages/",
-      "outputPath": "/Users/macbook/Documents/Zonamerica/Backend/willinn-backend-template/UnitTests/obj/",
+      "projectPath": "\\\\wsl.localhost\\Ubuntu\\home\\gabo\\willinn-unknown-api\\UnitTests\\UnitTests.csproj",
+      "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
+      "outputPath": "\\\\wsl.localhost\\Ubuntu\\home\\gabo\\willinn-unknown-api\\UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/macbook/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -973,6 +973,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -1016,7 +1021,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\Gabriel\\.dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

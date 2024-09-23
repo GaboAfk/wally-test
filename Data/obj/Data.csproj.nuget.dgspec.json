@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/macbook/Documents/Zonamerica/Backend/willinn-backend-template/Data/Data.csproj": {}
+    "\\\\wsl.localhost\\Ubuntu\\home\\gabo\\willinn-unknown-api\\Data\\Data.csproj": {}
   },
   "projects": {
-    "/Users/macbook/Documents/Zonamerica/Backend/willinn-backend-template/Data/Data.csproj": {
+    "\\\\wsl.localhost\\Ubuntu\\home\\gabo\\willinn-unknown-api\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/macbook/Documents/Zonamerica/Backend/willinn-backend-template/Data/Data.csproj",
+        "projectUniqueName": "\\\\wsl.localhost\\Ubuntu\\home\\gabo\\willinn-unknown-api\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "/Users/macbook/Documents/Zonamerica/Backend/willinn-backend-template/Data/Data.csproj",
-        "packagesPath": "/Users/macbook/.nuget/packages/",
-        "outputPath": "/Users/macbook/Documents/Zonamerica/Backend/willinn-backend-template/Data/obj/",
+        "projectPath": "\\\\wsl.localhost\\Ubuntu\\home\\gabo\\willinn-unknown-api\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
+        "outputPath": "\\\\wsl.localhost\\Ubuntu\\home\\gabo\\willinn-unknown-api\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/macbook/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -71,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\Gabriel\\.dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
